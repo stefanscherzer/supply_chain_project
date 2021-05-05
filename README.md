@@ -107,7 +107,9 @@ ganache-cli -m "spirit supply whale amount human item harsh scare congress disco
 
 Your terminal should look something like this:
 
-![truffle test](images/ganache-cli.png)
+![ganache-cli](images/ganache-cli.png)
+
+---
 
 In a separate terminal window, Compile your smart contracts:
 
@@ -117,9 +119,11 @@ truffle compile
 
 Your terminal should look something like this:
 
-![truffle test](images/truffle_compile.png)
+![truffle compile](images/truffle_compile.png)
 
 This will create the smart contract artifacts in folder ```build\contracts```.
+
+---
 
 Migrate smart contracts to the locally running blockchain, ganache-cli:
 
@@ -129,7 +133,13 @@ truffle migrate
 
 Your terminal should look something like this:
 
-![truffle test](images/truffle_migrate.png)
+![truffle migrate I](images/truffle_migrate1.png)  
+
+![truffle migrate II](images/truffle_migrate2.png)  
+
+![truffle migrate III](images/truffle_migrate3.png)
+
+---
 
 Test smart contracts:
 
@@ -140,6 +150,8 @@ truffle test
 All 10 tests should pass.
 
 ![truffle test](images/truffle_test.png)
+
+---
 
 In a separate terminal window, launch the DApp:
 
