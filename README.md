@@ -24,8 +24,11 @@ Web3.js v1.3.5
 
 <br>
 
-E.g., [Contract](https://rinkeby.etherscan.io/address/0x66020930e8708761cfa11a0b9c2d68bfb87e816c)
+E.g., [Contract](https://rinkeby.etherscan.io/address/0x18aa26fa12f1e8626d2c8153fe5f3d2f7b93bc0a)
 on the Rinkeby Network
+
+**Transaction ID**: 0x2413434603154d4b6ac0657910bda2deb675d0bb500b63663d619c83504a2fa3  
+**Contract address**: 0x18aa26fa12f1e8626d2c8153fe5f3d2f7b93bc0a
 
 <br>
 
@@ -34,13 +37,35 @@ on the Rinkeby Network
 <br>
 
 ## Project write-up
-### UML
+### UML diagrams
 
+#### Activity
 
-### Libraries
+![Activity diagram](images/uml_acitvity.png)
 
+<br>
+
+#### Sequence
+
+![Sequence diagram](images/uml_sequence.png)
+
+<br>
+
+#### State
+
+![State diagram](images/uml_state.png)
+
+<br>
+
+#### Classes (Data Model)
+
+![Classes diagram](images/uml_classes.png)
+
+<br>
 
 ### IPFS
+
+...
 
 <br>
 
@@ -83,6 +108,15 @@ If you need to install one of the mentioned tools, follow the How-tos mentioned 
 
 <br>
 
+#### Other mandatory packages:
+```bash
+# install packages
+npm install --save  truffle-hdwallet-provider@1.0.17
+npm install web3
+```
+
+<br>
+
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
@@ -111,6 +145,8 @@ Your terminal should look something like this:
 
 ---
 
+<br>
+
 In a separate terminal window, Compile your smart contracts:
 
 ```
@@ -124,6 +160,8 @@ Your terminal should look something like this:
 This will create the smart contract artifacts in folder ```build\contracts```.
 
 ---
+
+<br>
 
 Migrate smart contracts to the locally running blockchain, ganache-cli:
 
@@ -141,6 +179,8 @@ Your terminal should look something like this:
 
 ---
 
+<br>
+
 Test smart contracts:
 
 ```
@@ -153,9 +193,40 @@ All 10 tests should pass.
 
 ---
 
+<br>
+
 In a separate terminal window, launch the DApp:
 
 ```
 npm run dev
 ```
+
+---
+
+<br>
+
+### Deploy the smart contract on the Rinkeby Network
+
+<br>
+
+Create a `.mnemonic` and a `.infurakey` file in your root folder.<br>
+The `.mnemonic` file holds your Metamask mnemonic phrase.<br>
+In the `.infurakey` file you need to add your personal Infura PROJECT ID.
+
+<br>
+
+In a terminal window, Migrate smart contracts to the Rinkeby Network:
+
+```
+truffle migrate --reset --network rinkeby
+```
+
+![truffle migrate rinkeby I](images/truffle_migrate_rinkeby1.png)  
+
+![truffle migrate rinkeby II](images/truffle_migrate_rinkeby2.png)  
+
+![truffle migrate rinkeby III](images/truffle_migrate_rinkeby3.png)  
+
+![truffle migrate rinkeby IV](images/truffle_migrate_rinkeby4.png)
+
 
