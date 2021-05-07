@@ -39,19 +39,19 @@ on the Rinkeby Network
 ## Project write-up
 ### UML diagrams
 
-#### Activity
+#### Activity diagram
 
 ![Activity diagram](images/uml_acitvity.png)
 
 <br>
 
-#### Sequence
+#### Sequence diagram
 
 ![Sequence diagram](images/uml_sequence.png)
 
 <br>
 
-#### State
+#### State diagram
 
 ![State diagram](images/uml_state.png)
 
@@ -65,7 +65,7 @@ on the Rinkeby Network
 
 ### IPFS
 
-...
+I did not use IPFS for this project.
 
 <br>
 
@@ -200,6 +200,10 @@ In a separate terminal window, launch the DApp:
 ```
 npm run dev
 ```
+
+Now you should be able to see the form if you open a browser and open this URL: http://localhost:3000/
+
+<br>
 
 ---
 
