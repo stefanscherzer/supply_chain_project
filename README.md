@@ -63,9 +63,48 @@ on the Rinkeby Network
 
 <br>
 
+### Libraries
+
+#### Truffle
+
+I use Truffle as development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM).
+
+With Truffle, you get and more:
+
+- Built-in smart contract compilation, linking, deployment and binary management.
+- Automated contract testing for rapid development.
+- Scriptable, extensible deployment & migrations framework.
+- Network management for deploying to any number of public & private networks.
+
+More info can be found on the Truffle [webpage](https://www.trufflesuite.com/docs/truffle/overview).
+
+<br>
+
+#### truffle-hdwallet-provider
+
+HD Wallet-enabled Web3 provider. Use it to sign transactions for addresses derived from a 12-word mnemonic.
+
+More info can be found in the truffle-hdwallet-provider [repository](https://github.com/trufflesuite/truffle-hdwallet-provider) on GitHub.
+
+The repository is deprecated but I had to use the truffle-hdwallet-provider v1.0.17 because the latest version doesn't work like expected (more info [here](https://github.com/trufflesuite/truffle/issues/3936)).
+
+<br>
+
+#### web3.js
+
+web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
+
+If you want to learn more about it, read the [documentation](https://web3js.readthedocs.io/en/v1.3.4/).
+
+<br>
+
 ### IPFS
 
 I did not use IPFS for this project.
+
+IPFS powers the Distributed Web. It is a peer-to-peer hypermedia protocol
+designed to make the web faster, safer, and more open.
+For more info about IPFS read the [documentation](https://docs.ipfs.io/).
 
 <br>
 
